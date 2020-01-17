@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v2
 name: ipsec_service
 description: A Helm chart for ipsec service
 
