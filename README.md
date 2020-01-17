@@ -4,10 +4,10 @@ This repository has networking helm packages
 
 ### Repository Add to the client
 ```
-[Link](https://ankush06.github.io/nw/ipsec_service-0.0.1.tgz) and ![Image](src)
+- [ipsec_service] https://ankush06.github.io/nw/ipsec_service-0.0.1.tgz 
 ```
 
-### Repository Add to the client
+### Adding repository to the client
 
 Follow below steps to add the repostry on client
 ```
@@ -50,21 +50,4 @@ git push origin master
 
 ```
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
 
