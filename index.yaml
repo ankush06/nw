@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ipsec_service:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2020-01-17T13:26:43.535014071+05:30"
+    description: A Helm chart for ipsec service
+    digest: 3b9c3dc94a7a956a3fbcc544ef3dc440783f6d9864ccfcb1d6eeab70b08ae2ff
+    name: ipsec_service
+    type: application
+    urls:
+    - https://github.com/ankush06/nw/ipsec_service-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-01-17T13:26:43.533709712+05:30"
