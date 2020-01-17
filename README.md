@@ -1,12 +1,54 @@
-## Welcome to GitHub Pages
+## Repository for networking team
 
-You can use the [editor on GitHub](https://github.com/ankush06/nw/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This repository has networking helm packages 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Repository Add to the client
+```
+[Link](https://ankush06.github.io/nw/ipsec_service-0.0.1.tgz) and ![Image](src)
+```
 
-### Markdown
+### Repository Add to the client
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Follow below steps to add the repostry on client
+```
+#add repository and update it
+helm repo add mynw1 https://ankush06.github.io/nw
+helm repo update
+
+#aditional commands
+#list helm repository 
+helm repo list
+#search package in repository
+helm search repo ipsec
+```
+### Repository Add to the client
+```
+#Download helm:
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+#configure global git config
+git config --global user.name "ankush06"
+git config --global user.email "adianzx@gmail.com"
+#verify git global config
+git config --global --list
+
+#clone the dir
+git clone https://github.com/ankush06/nw.git && cd nw/
+
+#update the chart changes
+#verify the changes
+helm  lint src/ipsec_service/
+#Create the Helm chart package
+helm package src/*
+
+#Push the git repository on GitHub
+git add . 
+git commit -m "my chart changes"
+git push origin master                                              
+
+```
 
 ```markdown
 Syntax highlighted code block
@@ -26,12 +68,3 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ankush06/nw/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
