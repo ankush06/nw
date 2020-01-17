@@ -21,7 +21,12 @@ helm repo list
 #search package in repository
 helm search repo ipsec
 ```
-### Repository Add to the client
+```
+### Deploying service
+helm install ipsec_app mynw1/ipsec_service
+```
+
+### Updating helm chart
 ```
 #Download helm:
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
