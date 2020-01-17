@@ -2,7 +2,7 @@
 
 This repository has networking helm packages 
 
-### Repository Add to the client
+### helm package list List
 ```
 - [ipsec_service] https://ankush06.github.io/nw/ipsec_service-0.0.1.tgz 
 ```
